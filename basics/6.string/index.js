@@ -43,3 +43,28 @@ let email = "arjun@gmail.com";
 
 let username = email.slice(0, email.indexOf("@"));
 console.log(username);
+
+
+// method chaining - calling one method after another continuously in one line
+// combining methods to reduce the lines of code and unnecessary variables
+
+// ---------- without method chaining ----------
+
+let userid = window.prompt("Enter your userid");
+
+userid = userid.trim();
+let extraChars = userid.slice(1);
+let firstChar = userid.charAt(0);
+
+extraChars = extraChars.toLowerCase();
+firstChar = firstChar.toUpperCase()
+
+userid = firstChar + extraChars;
+
+console.log(userid);
+
+// ---------- with method chaining ----------
+
+userid = userid.trim().charAt(0).toUpperCase() + userid.trim().slice(1).toLowerCase();
+
+console.log(userid);

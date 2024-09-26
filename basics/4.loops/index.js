@@ -1,3 +1,6 @@
+// ----- IF LOOP -----
+
+
 let x = 15;
 
 if (x > 10) {
@@ -59,3 +62,41 @@ let a = 5;
 let message = (a < 5) ? "greater than or equal to 5!" : "less than 5";
 
 console.log(message);
+
+
+// logical operators
+// and && 
+// or ||
+// not !
+
+let temp = 20;
+
+if (temp >= 15 && temp < 35) {
+	console.log("The weather is good!")
+}
+else if (temp >= 35) {
+	console.log("The weather is hot!")
+}
+
+
+
+// ----- WHILE LOOP -----
+
+/*
+let username = "";
+while (username === "" || username === null) {
+	username = window.prompt("Enter your name!");
+}
+
+console.log(username);
+*/
+
+// ----- DO WHILE -----
+
+
+let username; // we dont have to give an initial value to username
+
+do {
+	window.prompt("Enter your name!")
+}
+while (username == "" || username == null)
