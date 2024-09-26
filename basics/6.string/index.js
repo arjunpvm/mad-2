@@ -30,4 +30,16 @@ console.log(name1.padStart(10, "a")); // padStart(n, "a") makes a string into a 
 //
 // StringSlicing
 
-let fullname = "Dhesika Arjun"
+let fullname = "Dhesika Arjun";
+
+console.log(fullname.slice(0, 7));
+console.log(fullname.slice(8)); // slices from the index given to the end of the file
+console.log(fullname.slice(-1));
+console.log(fullname.slice(-5));
+console.log(fullname.slice(0, fullname.indexOf(" "))); // better way of finding first name
+console.log(fullname.slice(fullname.indexOf(" ") + 1));
+
+let email = "arjun@gmail.com";
+
+let username = email.slice(0, email.indexOf("@"));
+console.log(username);
