@@ -93,10 +93,26 @@ console.log(username);
 
 // ----- DO WHILE -----
 
-
+/*
 let username; // we dont have to give an initial value to username
 
 do {
-	window.prompt("Enter your name!")
+	username = window.prompt("Enter your name!")
 }
-while (username == "" || username == null)
+while (username == "" || username == null);
+*/
+
+// ----- FOR LOOP-----
+
+for (let i = 0; i < 3; i++) {
+	console.log(i)
+}
+
+for (let i = 0; i <= 20; i++) {
+	if (i % 3 == 0) {
+		continue;
+	}
+	else {
+		console.log(i);
+	}
+}
