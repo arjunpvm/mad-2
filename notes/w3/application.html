@@ -11,7 +11,17 @@
 
 <body>
     <div id="app">
-        {{message}}
+        <p>{{message}}</p>
+        <label for="name">Name</label>
+        <input v-model="username" type="text" required>
+        <p v-if="count == 0"> Count not staterted yet</p>
+        <p v-else-if="count >= 5"> Yamatekudasai </p>
+        <p v-else> No of counts: {{count}}</p>
+
+        <ul>
+            <li v-for="username in visitors">{{username}}</li>
+        </ul>
+        <button v-on:click="letsGo">Lets Goo!</button>
     </div>
 
 </body>
