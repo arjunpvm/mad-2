@@ -61,6 +61,14 @@ Vue.component('message-board', {
             return this.messages.length;
         }
     },
+    mounted: async function() {
+        // we can save previous messages sent here
+        res = await fetch('http://localhost:8000/messages.json')
+        data = await res.json()
+
+        this.messages = data
+
+    },
 })
 let app = new Vue({
     el: "#app",
